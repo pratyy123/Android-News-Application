@@ -14,7 +14,9 @@ public interface APIinterface {
             @Query("apiKey")   String apiKey
 );
     @GET("top-headlines")
-    Call<NewsClass> getCategoryName(
+    Call<NewsClass> getCategoryName
+
+            (
             @Query("country") String country,
             @Query("category") String category,
             @Query("pageSize") int pageSize,
